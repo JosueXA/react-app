@@ -1,10 +1,9 @@
 
 
-const Note = ({task, onDelete}) => (
-  <>
-    <span>{ task }</span>
-    <button onClick={ onDelete }>x</button>
-  </>
+const Note = ({ children, ...props}) => (
+  <div { ...props } >
+    { children }
+  </div>
 )
 
 export default Note;
